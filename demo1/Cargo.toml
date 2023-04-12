@@ -6,5 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# 引入来自外部的两个依赖
+# 用于将html转换成md的库
 html2md = "0.2"
+# 用于Http请求的客户端
 reqwest = { version = "0.11", features = ["blocking"] }
+
+# cargo是工具软件用来管理项目，类似npm
+# 函数体{}
+# 表达式用；
+# 命名空间::，也可以用use简称 use std::fs; fs; 等同 std::fs;
+# 可执行的入口函数main
+
+# 函数最后一个表达式就是函数的返回值，采用函数式编程
