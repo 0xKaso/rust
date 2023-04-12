@@ -1,9 +1,10 @@
+// 函数需注明参数类型和返回值类型
 fn add(value1: i32, value2: i32) -> i32 {
-    value1 + value2
+    value1 + value2 // 此处不加;为返回值
 }
 
 fn div(value1: i32, value2: i32) -> i32 {
-    value1 / value2
+    value1 / value2 // 此处不加;为返回值
 }
 
 fn main() {
