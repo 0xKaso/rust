@@ -1,16 +1,24 @@
+// #[derive(Debug)]
+// 修饰符，为数据结构引入额外的行为
+// 如Debug则为项目提供了debug能力
+// Copy/Clone则让数据结构可以被复制
+
 #[derive(Debug)]
+// 枚举类型
 enum Gender {
-    Female = 1,
-    Male = 2,
+    Female,
+    Male,
 }
 
 #[derive(Debug, Copy, Clone)]
+// (元组)结构体，适用于简单的结构体
 struct UserId(u64);
 
 #[derive(Debug, Copy, Clone)]
 struct TopicId(u64);
 
 #[derive(Debug)]
+// 标准结构体
 struct User {
     id: UserId,
     name: String,
@@ -26,6 +34,7 @@ struct Topic {
 
 // 定义聊天室中可能发生的事件
 #[derive(Debug)]
+// 标签联合结构体
 enum Event {
     Join((UserId, TopicId)),
     Leave((UserId, TopicId)),
